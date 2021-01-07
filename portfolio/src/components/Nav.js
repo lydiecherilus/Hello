@@ -5,16 +5,12 @@ import '../App.css';
 
 function Nav() {
     return (
-        <header>
-            <div>
-                <nav>
-                    <NavLink activeClassName='active-navlink' className='navlink' to='/' exact>Home</NavLink>
-                    <NavLink activeClassName='active-navlink' className='navlink' to='/projects'>Projects</NavLink>
-                    <NavLink activeClassName='active-navlink' className='navlink' to='/education'>Education</NavLink>
-                    <NavLink activeClassName='active-navlink' className='navlink' to='/contact'>Contact</NavLink>
-              </nav>
-            </div>
-        </header>
+        <nav className='navlink'>
+            <NavLink activeClassName='active-navlink' className='navlink-items' to='/' exact>Home</NavLink>
+            <NavLink activeClassName='active-navlink' className='navlink-items' to='/projects'>Projects</NavLink>
+            <NavLink activeClassName='active-navlink' className='navlink-items' to='/education'>Education</NavLink>
+            <NavLink activeClassName='active-navlink' className='navlink-items' to='/contact'>Contact</NavLink>
+        </nav>
     );
 };
 
